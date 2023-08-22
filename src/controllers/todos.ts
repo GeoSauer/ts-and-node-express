@@ -48,5 +48,5 @@ export const deleteTodo: RequestHandler<{ id: string }> = (req, res, next) => {
 
   TODOS.splice(todoIndex, 1);
 
-  res.json({ meesage: "Todo deleted!", remainingTodos: TODOS });
+  res.json({ message: "Todo deleted!", remainingTodos: TODOS });
 };
